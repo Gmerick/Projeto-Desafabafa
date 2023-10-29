@@ -1,0 +1,749 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap%27');
+
+/* Body~ */
+body {
+    margin: 0;
+}
+
+/* Conteiner Pai para organização dos outros dois containers */
+.containerPai {
+    display: flex;
+    height: 100vh;
+}
+
+/* CSS utilizado apenas no Navegador da tela Login */
+
+/* Container do Navegador da tela Login */
+.containerNavLogin {
+    background-color: #ba78dc;
+    color: white;
+    padding: 20px;
+    width: 30vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* H1 do Navegador da tela Login, onde está escrito "Desabafa aí" */
+.h1NavLogin {
+    margin-top: -10em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 2.4em;
+}
+
+/* H2 do Navegador da tela Login, onde está escrito "Bem-vindo de volta!" */
+.h2NavLogin {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilização basica dos paragrafos apresentados no Navegador da tela Login */
+.pNavLogin {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Small criado para o Navegador da tela Login, aonde diminue as letras */
+.smallNavLogin {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+}
+
+
+/* Botões do Navegador da tela Login */
+.buttonNavLogin {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.buttonNavLogin:hover {
+    background-color: white;
+    color: #ba78dc;
+}   
+
+/* Normalizador do componente <a>, removendo as decorações de texto. */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+/* CSS do Formulário de Cadastro */
+
+/* H2 do Navegador da tela Login, onde está escrito "Desabafa aí" */
+
+.h2FormularioCadastro {
+  font-family: 'Poppins';
+  font-size: 2.4em;
+  color: #ba78dc;
+  font-weight: 600;
+}
+
+/* H3 do Navegador da tela Login, onde está escrito "Bem-vindo de volta!" */
+.h3FormularioCadastro {
+  font-family: 'Poppins';
+  color: #808080;
+  font-weight: 300;
+}
+
+.containerFormularioCadastro {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 70vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  
+  .containerFormularioCadastro h2 {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .containerFormularioCadastro form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .containerFormularioCadastro label {
+    width: 100%;
+    margin-bottom: 10px;
+    color: #808080;
+  }
+  
+  .containerFormularioCadastro input,
+  .containerFormularioCadastro select {
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #f2f2f2;
+    padding: 15px;
+    border-radius: 5px;
+    color: #808080;
+  }
+  
+  .containerFormularioCadastro .form-row {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .containerFormularioCadastro button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #ba78dc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+	form .conjunto label {
+		display: table;
+	  width: 100%;
+	  height: 20px;
+	  clear: both;
+	  background-color: transparent;
+	  position: relative;
+	  white-space: nowrap;
+	}
+	form .conjuntoRadio label input {
+		display: inline;
+		float: left;
+		width: auto;
+		height: 22px;
+		line-height: 22px;
+		margin: 0 3px 0 0;
+		padding: 0;
+		border: none;
+	}
+
+  .conjuntoRadio label {
+    background-color: #f2f2f2;
+    padding: 8px;
+    border-radius: 5px;
+    color: #808080;
+  }
+
+  .containerFormularioCadastro input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .containerFormularioCadastro input[type="radio"]:checked {
+    background-color: #ba78dc;
+  }
+
+  .containerFormularioCadastro input:valid,
+  .containerFormularioCadastro select:valid {
+    color: black;
+  }
+  
+  
+  @media screen and (min-width: 768px) {
+    .containerFormularioCadastro form {
+      width: 100%;
+    }
+  }
+
+
+  
+  /* --------------------------------------------------------------------------------- */
+
+  /* painel */
+
+  .background_msg_perfil
+  {
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+  }
+  
+  .msg_perfil h1
+  {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 10px;
+      color: #ba78dc;
+      
+      
+  }
+  
+  
+  .background_perfil
+  {
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      
+      align-items: center;
+      gap: 10px;
+  }
+  
+  form input{
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid;
+      border-color: #000000;
+      width: 300px;
+  }
+  
+  .bt_perfil
+  { 
+      flex-direction: column;
+      display: flex;
+      gap: 20px;
+  }
+  
+  .bt_usuarios_cadastrados
+  {
+      display: flex;
+      padding: 20px;
+      border-radius: 5px;
+      border: 0;
+      background-color: #ba78dc;
+      transition: 0.2s;
+  }
+  
+  .bt_novo_usuario
+  {
+      display: flex;
+      padding: 20px;
+      border-radius: 5px;
+      border: 0;
+      background-color: #ba78dc;
+      transition: 0.2s;
+  }
+  
+  /* .bt_logar
+  {
+      padding: 10px;
+      border-radius: 5px;
+      border: 0;
+      background-color: #FCDE9C;
+      transition: 0.2s;
+  } */
+  
+  button:hover
+  {
+      cursor:pointer;
+      background: #d8b0ec;
+      color: #000000;
+  
+  }
+  
+  /* listagem */
+
+  .listar
+{
+    margin-left: 100px;
+    width: 100%;
+    border-collapse: collapse;  
+    border: 1px solid;
+    border-color:#000000;
+    padding: 15px 10px;
+
+    display: flex;
+
+    font-family: 'Poppins';
+}
+
+.lista_nome {
+    flex: 1;
+}
+
+.bt_up_del {
+    display: flex;
+}
+
+.visu_usuario p
+{
+    font-family: 'Poppins';
+
+}
+.visu_usuario
+{
+    border: #000000;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid;
+    border-color: #000000;
+    width: 300px;
+
+    align-items: center;
+}
+
+.bt_up_del
+{
+    display: flex;
+    gap: 10px;
+}
+
+/* botão painel */
+
+.buttonNavPainel {
+    background-color: #ba78dc;
+    color: white;
+    border-radius: 50px;
+    border: 2px solid #ba78dc;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .buttonNavPainel:hover {
+    background-color: white;
+    color: #ba78dc;
+    border: 2px solid #ba78dc;
+  }
+
+  /* update */
+
+  .h2FormularioUpdate {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 2.4em;
+    color: #ba78dc;
+  }
+  
+  .containerFormularioUpdate {
+      background-color: #ffffff;
+      padding: 20px;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    
+    
+    .containerFormularioUpdate h2 {
+      width: 100%;
+      text-align: center;
+    }
+    
+    .containerFormularioUpdate form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+      max-width: 600px;
+    }
+    
+    .containerFormularioUpdate label {
+      width: 100%;
+      margin-bottom: 10px;
+      color: #808080;
+    }
+    
+    .containerFormularioUpdate input,
+    .containerFormularioUpdate select {
+      width: 100%;
+      margin-bottom: 10px;
+      border: none;
+      background-color: #f2f2f2;
+      padding: 8px;
+      border-radius: 5px;
+      color: #808080;
+    }
+    
+    .containerFormularioUpdate .form-row {
+      display: flex;
+      gap: 10px;
+      width: 100%;
+    }
+    
+    .containerFormularioUpdate button[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #ba78dc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    
+  /* CSS do Header da Home */
+/* Logo imagem */
+
+.logo{
+    width: 7vw;
+  }
+  
+  /* Container do Navegador da tela Home */
+  .containerNavHome {
+    background-color: #ffffff;
+    color: black;
+    border-right: 1px solid;
+    padding: 20px;
+    width: 25vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Estilização basica dos paragrafos apresentados no Navegador da tela Home */
+  .pNavHome {
+    display: flex;
+    align-items: center;
+    font-size: 1.4em;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .pNavHome i {
+    margin-right: 5px;
+  }
+  
+  
+  
+  /* Small criado para o Navegador da tela Home, aonde diminue as letras */
+  .smallNavHome {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+  }
+  
+  
+  /* Botões do Navegador da tela Home */
+  .buttonNavHome {
+    background-color: #ba78dc;
+    color: white;
+    border-radius: 50px;
+    border: 2px solid #ba78dc;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .buttonNavHome:hover {
+    background-color: white;
+    color: #ba78dc;
+    border: 2px solid #ba78dc;
+  }   
+  
+    /* --------------------------------------------------------------------------------- */
+  
+    /* CSS do Feed */
+  
+    .containerContent {
+      margin: 0 auto;
+      width: 50vw;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .containerContent hr {
+      border: none; 
+      border-top: 1px solid black;
+      width: 50vw;
+    }
+  
+    .h1Content{
+      font-family: 'Poppins', sans-serif;
+      padding-left: 0.6em;
+      font-weight: normal;
+      font-size: 2.4em;
+    }
+    
+    .postagem {
+      background-color: #fff;
+      padding: 10px;
+      margin-bottom: 20px;
+      width: 100%;
+      max-width: 45vw;
+    }
+    
+    .postagemUsuario {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    .fotoUsuario {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    
+    .nomeUsuario {
+      font-weight: bold;
+    }
+    
+    .campoPostagem {
+      width: 100%;
+      height: 100px;
+      padding: 10px;
+      border: none;
+      border-radius: 1px;
+      resize: none;
+      margin-bottom: 10px;
+    }
+  
+    textarea:focus {
+      outline: none;
+    }
+    
+    .botaoPostar {
+      background-color: #ba78dc;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .feed {
+      border-radius: 5px;
+      padding: 10px;
+      width: 100%;
+      max-width: 600px;
+    }
+    
+    .postagemFeed {
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    
+    .conteudoPostagem {
+      margin-bottom: 10px;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    .acoesPostagem {
+      display: flex;
+      align-items: flex-end;
+    }
+    
+    .botaoCurtir,
+    .botaoComentar,
+    .botaoCompartilhar {
+      background-color: transparent;
+      border: none;
+      color: #ba78dc;
+      cursor: pointer;
+    }
+    
+    .botaoCurtir:hover,
+    .botaoComentar:hover,
+    .botaoCompartilhar:hover {
+      text-decoration: underline;
+    }
+  
+    .sizeUp{
+      font-size: 1.8em;
+    }
+    
+    .row{
+      display: flex;
+      justify-content: space-between;
+    }
+  
+  
+      /* --------------------------------------------------------------------------------- */
+  
+    /* CSS do Forum */
+  
+    
+    .containerForum {
+      background-color: #ffffff;
+      color: black;
+      border-left: 1px solid;
+      padding: 20px;
+      width: 25vw;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .search-bar {
+      display: flex;
+      align-items: center;
+      width: 300px;
+      height: 40px;
+      background-color: #f2f2f2;
+      border-radius: 20px;
+      overflow: hidden;
+  }
+  
+  .search-bar input[type="text"] {
+      flex: 1;
+      border: none;
+      outline: none;
+      padding: 10px;
+      font-size: 16px;
+  }
+  
+  .search-bar button {
+      border: none;
+      background-color: #ba78dc;
+      color: white;
+      padding: 10px 20px;
+      cursor: pointer;
+  }
+  
+  .containerForumFundo {
+    background-color: #f8e4fc;
+    color: black;
+    border-radius: 20px;
+    margin-top: 2em;
+    width: 20vw;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .h2Forum {
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .containerForum hr {
+    border: none; 
+    border-top: 1px solid black;
+    margin: 12px 0 0px 0;
+    width: 20vw;
+  }
+  
+  .containerItensForum{
+    margin: 8px;
+  }
+  
+  .h3Forum {
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+  }
+  
+  .pForum {
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+  }
+  
+  .smallForum {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8em;
+    color: rgb(77, 77, 77);
+    text-align: left;
+  }
+  
+  .mostrarMais{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color:#b468da;
+    padding: 8px;
+    margin: 0px 10px 0px 0px;
+    text-align: right;
+  }
+
+  .containerPainel button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #ba78dc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+  .containerPainel {
+    background-color: #ffffff;
+    padding: 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
